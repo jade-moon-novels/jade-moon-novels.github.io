@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jade Moon’s Novels - Dawn</title>
+  <link rel="icon" type="image/x-icon" href="/Images/favicon.png">
+  <link href="/CSS_JS/style.css" rel="stylesheet" type="text/css"/>
+  <link href="//use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Noto+Sans|Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <script src="/CSS_JS/script.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="prevent-select fontComic" onload="startup()">
+  <button onclick="topFunction()" id="topBtn" title="Go to top">↑</button> <!-- Scroll to top button-->
+
+  <div class="navBar">
+    <a href="/Home.html" class="navBarLinks black-font">Home</a>
+    <a href="/About.html" class="navBarLinks black-font">About</a>
+
+    <div class="dropdown activeNav">
+      <a onclick="clickDropdown('5AE_Drop')" href="javascript:void(0)" class="dropbtn black-font activeNav">5AE <i class="fa fa-caret-down"></i></a>
+      <div id="5AE_Drop" class="dropdown-content">
+        <div class="dropRow">
+          <div class="column3 resp">
+            <h3 class="black-font">0. 5AE</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/Dawn.html">Story #1: Dawn</a>
+            <a class="navBarMenuLinks" href="/Novels/5AE/Gate.html">Story #2: Gate</a>
+            <a class="navBarMenuLinks" href="/Novels/5AE/Dusk.html">Story #3: Dusk</a>
+            <br>
+            <h3 class="black-font">1. S4</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/S4/A-Blossoming-Secret.html">Story #1. A Blossoming Secret</a>
+            <a class="navBarMenuLinks" href="/Novels/5AE/S4/The-Alpha-Squad.html">Story #2. The Alpha Squad</a>
+            <a class="navBarMenuLinks" href="/Novels/5AE/S4/The-Family-Secret.html">Story #3. The Family Secret</a>
+          </div>
+          <div class="column3 resp">
+            <h3 class="black-font">2. Evangeline</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/2-1.html">Story #1: TBD</a>
+            <br>
+            <h3 class="black-font">2.5. ELLE</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/ELLE/ELLE.html">Story #1: ELLE</a>
+            <a class="navBarMenuLinks" href="/Novels/5AE/ELLE/ELLE:Starting-Point.html">Story #2: ELLE: Starting Point</a>
+            <a class="navBarMenuLinks" href="/Novels/5AE/ELLE/ELLE:Masquerade.html">Story #3: ELLE: Masquerade</a>
+            <br>
+            <h3 class="black-font">3. Emmelyn</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/3-1.html">Story #1: TBD</a>
+          </div>
+          <div class="column3 resp">
+            <h3 class="black-font">4. Elliana</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/4-1.html">Story #1: TBD</a>
+            <br>
+            <h3 class="black-font">5. Erica</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/5-1.html">Story #1: TBD</a>
+            <br>
+            <h3 class="black-font">5.5. The Darkness</h3>
+            <a class="navBarMenuLinks" href="/Novels/5AE/The-Darkness.html">Story #1: The Darkness</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- 5AE -->
+
+    <a href="/Novels/AR/Alyssia's-Revenge.html" class="navBarLinks black-font">Alyssia’s Revenge</a>
+
+    <div class="dropdown">
+      <a onclick="clickDropdown('BT_Drop')" href="javascript:void(0)" class="dropbtn black-font">Blood Ties <i class="fa fa-caret-down"></i></a>
+      <div id="BT_Drop" class="dropdown-content">
+        <div class="dropRow">
+          <div class="column4">
+            <a class="navBarMenuLinks" href="/Novels/BT/A-Leap-Of-Fate.html">1. A Leap of Fate</a>
+          </div>
+          <div class="column4">
+            <a class="navBarMenuLinks" href="/Novels/BT/A-Trick-Of-Fate.html">2. A Trick of Fate</a>
+          </div>
+          <div class="column4">
+            <a class="navBarMenuLinks" href="/Novels/BT/A-Result-Of-Fate.html">3. A Result of Fate</a>
+          </div>
+          <div class="column4">
+            <a class="navBarMenuLinks" href="/Novels/BT/A-Connection-Of-Fate.html">Extras: A Connection of Fate</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Blood Ties -->
+
+    <a href="/Novels/BD/Bloodline.html" class="navBarLinks black-font">Bloodline</a>
+    <a href="/Novels/BoT/Bonds-Of-Time.html" class="navBarLinks black-font">Bonds of Time</a>
+    
+    <div class="dropdown">
+      <a onclick="clickDropdown('D_Drop')" href="javascript:void(0)" class="D_Link dropbtn black-font">Deuce <i class="fa fa-caret-down"></i></a>
+      <div id="D_Drop" class="dropdown-content">
+        <div class="dropRow">
+          <div class="column2 resp">
+            <a href="/Novels/D/Dragon-&-Phoenix.html" class="navBarMenuLinks">1. Dragon & Phoenix</a>
+          </div>
+          <div class="column2 resp">
+            <a href="/Novels/D/Mirror.html" class="navBarMenuLinks">2. Mirror</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Deuce -->
+
+    <div class="dropdown">
+      <a onclick="clickDropdown('EoG_Drop')" href="javascript:void(0)" class="dropbtn black-font">Era of Gods <i class="fa fa-caret-down"></i></a>
+      <div id="EoG_Drop" class="dropdown-content">
+        <div class="dropRow">
+          <div class="column3 resp">
+            <a class="navBarMenuLinks" href="/Novels/EoG/Era-Of-Betrayals.html">1. Era of Betrayals</a>
+          </div>
+          <div class="column3 resp">
+            <a class="navBarMenuLinks" href="/Novels/EoG/Era-Of-Pride.html">2. Era of Pride</a>
+          </div>
+          <div class="column3 resp">
+            <a class="navBarMenuLinks" href="/Novels/EoG/Era-Of-Tricks.html">3. Era of Tricks</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Era of Gods -->
+
+    <a href="/Novels/F/Finding.html" class="navBarLinks black-font">Finding</a>
+    <a href="/Novels/H/Hybrids.html" class="navBarLinks black-font">Hybrids</a>
+    <a href="/Novels/J/Judgment.html" class="navBarLinks black-font">Judgment</a>
+    <a href="/Novels/SM/Shadow-Monarch.html" class="navBarLinks black-font">Shadow Monarch</a>
+    <a href="/Novels/SW/Spirit-War.html" class="navBarLinks black-font">Spirit War</a>
+    <a href="/Other/Short-Stories.html" class="navBarLinks black-font">Short Stories</a>
+    <a href="/Other/Poems.html" class="navBarLinks black-font">Poems</a>
+    <a href="/Other/Images.html" class="navBarLinks black-font">All Images</a>
+    <a href="/Tags/Tags.html" class="navBarLinks black-font">Tags</a>
+  </div>
+  
+  <hr class="normal-hr">
+  
+  <div id="stickyNav" class="white-background black-font">
+    <div id="stickyNavInside">
+      <button class="honorificsButton white-background black-font" onclick="switchHonorifics()">⚜</button>
+      
+      <i onclick="activateDarkMode()" class="fa fa-moon-o" id="moon"></i>
+
+      <i onclick="activateDarkMode()" class="fas fa-sun" id="sun" style="display:none;"></i>
+      
+      <i onclick="toggleFont()" class="fa fa-font"></i>
+      
+      <div id="searchButtonDiv">
+        <button id="searchButton" class="white-background black-font" onclick="toggleSecret()">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+  
+      <div id="searchBar">
+        <input type="text" placeholder="Search.." id="searchInput" onkeyup="filterSearch()">
+  
+        <div id="searchOptionsID" class="searchOptions">
+          <a href="/Novels/5AE/S4/A-Blossoming-Secret.html">A Blossoming Secret</a>
+          <a href="/Novels/BT/A-Connection-Of-Fate.html">A Connection of Fate</a>
+          <a href="/Novels/BT/A-Leap-Of-Fate.html">A Leap of Fate</a>
+          <a href="/Novels/BT/A-Result-Of-Fate.html">A Result of Fate</a>
+          <a href="/Novels/BT/A-Trick-Of-Fate.html">A Trick of Fate</a>
+          <a href="/Novels/AR/Alyssia's-Revenge.html">Alyssia’s Revenge</a>
+          <a href="/Novels/BD/Bloodline.html">Bloodline</a>
+          <a href="/Novels/BoT/Bonds-Of-Time.html">Bonds of Time</a>
+          <a href="/Novels/5AE/Dawn.html">Dawn</a>
+          <a href="/Novels/D/Dragon-&-Phoenix.html">Dragon & Phoenix</a>
+          <a href="/Novels/5AE/Dusk.html">Dusk</a>
+          <a href="/Novels/5AE/ELLE/ELLE.html">ELLE</a>
+          <a href="/Novels/5AE/ELLE/ELLE:Starting-Point.html">ELLE: Starting Point</a>
+          <a href="/Novels/5AE/4-1.html">Elliana’s Story</a>
+          <a href="/Novels/5AE/3-1.html">Emmelyn’s Story</a>
+          <a href="/Novels/5AE/5-1.html">Erica’s Story</a>
+          <a href="/Novels/EoG/Era-Of-Betrayals.html">Era of Betrayals</a>
+          <a href="/Novels/EoG/Era-Of-Pride.html">Era of Pride</a>
+          <a href="/Novels/EoG/Era-Of-Tricks.html">Era of Tricks</a>
+          <a href="/Novels/5AE/2-1.html">Evangeline’s Story</a>
+          <a href="/Novels/5AE/Gate.html">Gate</a>
+          <a href="/Novels/H/Hybrids.html">Hybrids</a>
+          <a href="/Novels/J/Judgment.html">Judgment</a>
+          <a href="/Novels/D/Mirror.html">Mirror</a>
+          <a href="/Novels/SM/Shadow-Monarch.html">Shadow Monarch</a>
+          <a href="/Novels/SW/Spirit-War.html">Spirit War</a>
+          <a href="/Novels/5AE/S4/The-Alpha-Squad.html">The Alpha Squad</a>
+          <a href="/Novels/5AE/The-Darkness.html">The Darkness</a>
+          <a href="/Novels/5AE/S4/The-Family-Secret.html">The Family Secret</a>
+          <a href="/Novels/F/Finding.html">Finding</a>
+        </div>
+      </div>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+  </div>
+
+  <div class="tab">
+    <div class="column2 chap">
+      <a href="#" class="tablinks white-background black-font" onclick="openPageTitle(event, 'Title', 'yy', 'nn')" id="defaultOpen">Dawn</a>
+      <a href="#TOC" class="tablinks white-background black-font" onclick="openPage(event, 'TOC', 'y', 'n')">TOC</a>
+      <a href="#Pro" class="tablinks white-background black-font" onclick="openPage(event, 'Pro', 'py', 'pn')">Prologue</a>
+      
+      <button class="accordion tablinksZ white-background black-font">Arc 1: Eleanor</button>
+      <div class="panel white-background black-font">
+        <a href="#1_Ch1" class="tablinks white-background black-font" onclick="openPage(event, '1_Ch1', '1_1y', '1_1n')">Chapter 1</a>
+        <a href="#1_Ch2" class="tablinks white-background black-font" onclick="openPage(event, '1_Ch2', '1_2y', '1_2n')">Chapter 2</a>
+        <a href="#1_Ch3" class="tablinks white-background black-font" onclick="openPage(event, '1_Ch3', '1_3y', '1_3n')">Chapter 3</a>
+        <a href="#1_Ch4" class="tablinks white-background black-font" onclick="openPage(event, '1_Ch4', '1_4y', '1_4n')">Chapter 4</a>
+        <a href="#1_Ch5" class="tablinks white-background black-font" onclick="openPage(event, '1_Ch5', '1_5y', '1_5n')">Chapter 5</a>
+      </div>
+
+      <button class="accordion tablinksZ white-background black-font">Arc 2: Evangeline</button>
+      <div class="panel white-background black-font">
+        <a href="#2_Ch1" class="tablinks white-background black-font" onclick="openPage(event, '2_Ch1', '2_1y', '2_1n')">Chapter 1</a>
+        <a href="#2_Ch2" class="tablinks white-background black-font" onclick="openPage(event, '2_Ch2', '2_2y', '2_2n')">Chapter 2</a>
+        <a href="#2_Ch3" class="tablinks white-background black-font" onclick="openPage(event, '2_Ch3', '2_3y', '2_3n')">Chapter 3</a>
+        <a href="#2_Ch4" class="tablinks white-background black-font" onclick="openPage(event, '2_Ch4', '2_4y', '2_4n')">Chapter 4</a>
+        <a href="#2_Ch5" class="tablinks white-background black-font" onclick="openPage(event, '2_Ch5', '2_5y', '2_5n')">Chapter 5</a>
+      </div>
+
+      <button class="accordion tablinksZ white-background black-font">Arc 3: Emmelyn</button>
+      <div class="panel white-background black-font">
+        <a href="#3_Ch1" class="tablinks white-background black-font" onclick="openPage(event, '3_Ch1', '3_1y', '3_1n')">Chapter 1</a>
+        <a href="#3_Ch2" class="tablinks white-background black-font" onclick="openPage(event, '3_Ch2', '3_2y', '3_2n')">Chapter 2</a>
+        <a href="#3_Ch3" class="tablinks white-background black-font" onclick="openPage(event, '3_Ch3', '3_3y', '3_3n')">Chapter 3</a>
+        <a href="#3_Ch4" class="tablinks white-background black-font" onclick="openPage(event, '3_Ch4', '3_4y', '3_4n')">Chapter 4</a>
+        <a href="#3_Ch5" class="tablinks white-background black-font" onclick="openPage(event, '3_Ch5', '3_5y', '3_5n')">Chapter 5</a>
+      </div>
+
+      <button class="accordion tablinksZ white-background black-font">Arc 4: Elliana</button>
+      <div class="panel white-background black-font">
+        <a href="#4_Ch1" class="tablinks white-background black-font" onclick="openPage(event, '4_Ch1', '4_1y', '4_1n')">Chapter 1</a>
+        <a href="#4_Ch2" class="tablinks white-background black-font" onclick="openPage(event, '4_Ch2', '4_2y', '4_2n')">Chapter 2</a>
+        <a href="#4_Ch3" class="tablinks white-background black-font" onclick="openPage(event, '4_Ch3', '4_3y', '4_3n')">Chapter 3</a>
+        <a href="#4_Ch4" class="tablinks white-background black-font" onclick="openPage(event, '4_Ch4', '4_4y', '4_4n')">Chapter 4</a>
+        <a href="#4_Ch5" class="tablinks white-background black-font" onclick="openPage(event, '4_Ch5', '4_5y', '4_5n')">Chapter 5</a>
+      </div>
+
+      <button class="accordion tablinksZ white-background black-font">Arc 5: Erica</button>
+      <div class="panel white-background black-font">
+        <a href="#5_Ch1" class="tablinks white-background black-font" onclick="openPage(event, '5_Ch1', '5_1y', '5_1n')">Chapter 1</a>
+        <a href="#5_Ch2" class="tablinks white-background black-font" onclick="openPage(event, '5_Ch2', '5_2y', '5_2n')">Chapter2</a>
+        <a href="#5_Ch3" class="tablinks white-background black-font" onclick="openPage(event, '5_Ch3', '5_3y', '5_3n')">Chapter 3</a>
+        <a href="#5_Ch4" class="tablinks white-background black-font" onclick="openPage(event, '5_Ch4', '5_4y', '5_4n')">Chapter 4</a>
+        <a href="#5_Ch5" class="tablinks white-background black-font" onclick="openPage(event, '5_Ch5', '5_5y', '5_5n')">Chapter 5</a>
+      </div>
+    </div>
+
+    <div class="column2 nov">
+      <div id="title">
+        <h5>Dawn</h5>
+      </div>
+
+      <div id="Title" class="tabcontent">
+        <div class="prevNextDiv">
+          <a class="prev-next-button hidden">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="yy">
+            <h1>⚜ Dawn ⚜</h1>
+            <p class="center font20">By: Jade Moon</p>
+            <p>Synopsis: </p>
+            <p>Tags:</p>
+            <pre>
+              a
+              
+              a
+
+              a
+              
+              a
+
+              a
+              
+              a
+
+              a
+              
+              a
+
+              a
+              
+              a
+
+              a
+              
+              a
+
+              a
+              
+              a
+
+              a
+              
+              a
+
+              
+            </pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="nn">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+      
+      <div id="TOC" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#" class="prev-next-button" onclick="openPageTitle(event, 'Title', 'yy', 'nn')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#Pro" class="prev-next-button" onclick="openPage(event, 'Pro', 'py', 'pn')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="y">
+            <h1>⚜ Table of Contents ⚜</h1>
+            <div class="tocLinks black-botBor">
+              <a href="#Pro" class="para black-font" onclick="openPage(event, 'Pro', 'py', 'pn')">Prologue</a>
+            </div>
+            <h3>Arc 1: Eleanor</h3>
+            <div class="tocLinks black-botBor">
+              <a href="#1_Ch1" class="para black-font" onclick="openPage(event, '1_Ch1', '1_1y', '1_1n')">Chapter 1: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#1_Ch2" class="para black-font" onclick="openPage(event, '1_Ch2', '1_2y', '1_2n')">Chapter 2: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#1_Ch3" class="para black-font" onclick="openPage(event, '1_Ch3', '1_3y', '1_3n')">Chapter 3: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#1_Ch4" class="para black-font" onclick="openPage(event, '1_Ch4', '1_4y', '1_4n')">Chapter 4: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#1_Ch5" class="para black-font" onclick="openPage(event, '1_Ch5', '1_5y', '1_5n')">Chapter 5: Title</a>
+            </div><br>
+            <br>
+            <h3>Arc 2: Evangeline</h3>
+            <div class="tocLinks black-botBor">
+              <a href="#2_Ch1" class="para black-font" onclick="openPage(event, '2_Ch1', '2_1y', '2_1n')">Chapter 1: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#2_Ch2" class="para black-font" onclick="openPage(event, '2_Ch2', '2_2y', '2_2n')">Chapter 2: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#2_Ch3" class="para black-font" onclick="openPage(event, '2_Ch3', '2_3y', '2_3n')">Chapter 3: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#2_Ch4" class="para black-font" onclick="openPage(event, '2_Ch4', '2_4y', '2_4n')">Chapter 4: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#2_Ch5" class="para black-font" onclick="openPage(event, '2_Ch5', '2_5y', '2_5n')">Chapter 5: Title</a>
+            </div><br>
+            <br>
+            <h3>Arc 3: Emmelyn</h3>
+            <div class="tocLinks black-botBor">
+              <a href="#3_Ch1" class="para black-font" onclick="openPage(event, '3_Ch1', '3_1y', '3_1n')">Chapter 1: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#3_Ch2" class="para black-font" onclick="openPage(event, '3_Ch2', '3_2y', '3_2n')">Chapter 2: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#3_Ch3" class="para black-font" onclick="openPage(event, '3_Ch3', '3_3y', '3_3n')">Chapter 3: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <ap href="#3_Ch4" class="para black-font" onclick="openPage(event, '3_Ch4', '3_4y', '3_4n')">Chapter 4: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#3_Ch5" class="para black-font" onclick="openPage(event, '3_Ch5', '3_5y', '3_5n')">Chapter 5: Title</a>
+            </div><br>
+            <br>
+            <h3>Arc 4: Elliana</h3>
+            <div class="tocLinks black-botBor">
+              <a href="#4_Ch1" class="para black-font" onclick="openPage(event, '4_Ch1', '4_1y', '4_1n')">Chapter 1: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#4_Ch2" class="para black-font" onclick="openPage(event, '4_Ch2', '4_2y', '4_2n')">Chapter 2: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#4_Ch3" class="para black-font" onclick="openPage(event, '4_Ch3', '4_3y', '4_3n')">Chapter 3: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#4_Ch4" class="para black-font" onclick="openPage(event, '4_Ch4', '4_4y', '4_4n')">Chapter 4: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#4_Ch5" class="para black-font" onclick="openPage(event, '4_Ch5', '4_5y', '4_5n')">Chapter 5: Title</a>
+            </div><br>
+            <br>
+            <h3>Arc 5: Erica</h3>
+            <div class="tocLinks black-botBor">
+              <a href="#5_Ch1" class="para black-font" onclick="openPage(event, '5_Ch1', '5_1y', '5_1n')">Chapter 1: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#5_Ch2" class="para black-font" onclick="openPage(event, '5_Ch2', '5_2y', '5_2n')">Chapter 2: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#5_Ch3" class="para black-font" onclick="openPage(event, '5_Ch3', '5_3y', '5_3n')">Chapter 3: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#5_Ch4" class="para black-font" onclick="openPage(event, '5_Ch4', '5_4y', '5_4n')">Chapter 4: Title</a>
+            </div><br>
+            <div class="tocLinks black-botBor">
+              <a href="#5_Ch5" class="para black-font" onclick="openPage(event, '5_Ch5', '5_5y', '5_5n')">Chapter 5: Title</a>
+            </div><br>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="Pro" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#1_Ch1" class="prev-next-button" onclick="openPage(event, '1_Ch1', '1_1y', '1_1n')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="py">
+            <h1>⚜ Prologue ⚜</h1>
+            <pre>
+It’s said that one’s abilities depend on the quality of their soul. The higher the quality, the better the person’s basic specs. Someone with a high level soul could learn skills quicker, comprehend matters deeper, and were granted special abilities, such as magnified senses or perfect memory. But this was just the tip of the iceberg. A superior soul could influence the souls around them and increase their levels as well. 
+
+High level souls were by no means commonplace. It would take several eons for even one soul to evolve into a high level soul. However, this was only for a natural turn of events … 
+            </pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="pn">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="1_Ch1" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#Pro" class="prev-next-button" onclick="openPage(event, 'Pro', 'py', 'pn')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#1_Ch2" class="prev-next-button" onclick="openPage(event, '1_Ch2', '1_2y', '1_2n')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="1_1y">
+            <h1>⚜ Eleanor - Chapter 1 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="1_1n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="1_Ch2" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#1_Ch1" class="prev-next-button" onclick="openPage(event, '1_Ch1', '1_1y', '1_1n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#1_Ch3" class="prev-next-button" onclick="openPage(event, '1_Ch3', '1_3y', '1_3n')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="1_2y">
+            <h1>⚜ Eleanor - Chapter 2 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="1_2n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="1_Ch3" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#1_Ch2" class="prev-next-button" onclick="openPage(event, '1_Ch2', '1_2y', '1_2n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#1_Ch4" class="prev-next-button" onclick="openPage(event, '1_Ch4', '1_4y', '1_4n')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="1_3y">
+            <h1>⚜ Eleanor - Chapter 3 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="1_3n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="1_Ch4" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#1_Ch3" class="prev-next-button" onclick="openPage(event, '1_Ch3', '1_3y', '1_3n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#1_Ch5" class="prev-next-button" onclick="openPage(event, '1_Ch5', '1_5y', '1_5n')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="1_4y">
+            <h1>⚜ Eleanor - Chapter 4 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="1_4n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="1_Ch5" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#1_Ch4" class="prev-next-button" onclick="openPage(event, '1_Ch4', '1_4y', '1_4n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#2_Ch1" class="prev-next-button" onclick="openPage(event, '2_Ch1', '2_1y', '2_1n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="1_5y">
+            <h1>⚜ Eleanor - Chapter 5 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="1_5n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="2_Ch1" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#1_Ch5" class="prev-next-button" onclick="openPage(event, '1_Ch5', '1_5y', '1_5n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#2_Ch2" class="prev-next-button" onclick="openPage(event, '2_Ch2', '2_2y', '2_2n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="2_1y">
+            <h1>⚜ Evangeline - Chapter 1 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="2_1n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="2_Ch2" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#2_Ch1" class="prev-next-button" onclick="openPage(event, '2_Ch1', '2_1y', '2_1n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#2_Ch3" class="prev-next-button" onclick="openPage(event, '2_Ch3', '2_3y', '2_3n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="2_2y">
+            <h1>⚜ Evangeline - Chapter 2 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="2_2n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="2_Ch3" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#2_Ch2" class="prev-next-button" onclick="openPage(event, '2_Ch2', '2_2y', '2_2n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#2_Ch4" class="prev-next-button" onclick="openPage(event, '2_Ch4', '2_4y', '2_4n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="2_3y">
+            <h1>⚜ Evangeline - Chapter 3 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="2_3n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="2_Ch4" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#2_Ch3" class="prev-next-button" onclick="openPage(event, '2_Ch3', '2_3y', '2_3n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#2_Ch5" class="prev-next-button" onclick="openPage(event, '2_Ch5', '2_5y', '2_5n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="2_4y">
+            <h1>⚜ Evangeline - Chapter 4 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="2_4n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="2_Ch5" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#2_Ch4" class="prev-next-button" onclick="openPage(event, '2_Ch4', '2_4y', '2_4n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#3_Ch1" class="prev-next-button" onclick="openPage(event, '3_Ch1', '3_1y', '3_1n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="2_5y">
+            <h1>⚜ Evangeline - Chapter 5 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="2_5n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="3_Ch1" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#2_Ch5" class="prev-next-button" onclick="openPage(event, '2_Ch5', '2_5y', '2_5n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#3_Ch2" class="prev-next-button" onclick="openPage(event, '3_Ch2', '3_2y', '3_2n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="3_1y">
+            <h1>⚜ Emmelyn - Chapter 1 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="3_1n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="3_Ch2" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#3_Ch1" class="prev-next-button" onclick="openPage(event, '3_Ch1', '3_1y', '3_1n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#3_Ch3" class="prev-next-button" onclick="openPage(event, '3_Ch3', '3_3y', '3_3n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="3_2y">
+            <h1>⚜ Emmelyn - Chapter 2 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="3_2n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="3_Ch3" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#3_Ch2" class="prev-next-button" onclick="openPage(event, '3_Ch2', '3_2y', '3_2n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#3_Ch4" class="prev-next-button" onclick="openPage(event, '3_Ch4', '3_4y', '3_4n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="3_3y">
+            <h1>⚜ Emmelyn - Chapter 3 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="3_3n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="3_Ch4" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#3_Ch3" class="prev-next-button" onclick="openPage(event, '3_Ch3', '3_3y', '3_3n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#3_Ch5" class="prev-next-button" onclick="openPage(event, '3_Ch5', '3_5y', '3_5n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="3_4y">
+            <h1>⚜ Emmelyn - Chapter 4 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="3_4n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="3_Ch5" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#3_Ch4" class="prev-next-button" onclick="openPage(event, '3_Ch4', '3_4y', '3_4n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#4_Ch1" class="prev-next-button" onclick="openPage(event, '4_Ch1', '4_1y', '4_1n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="3_5y">
+            <h1>⚜ Emmelyn - Chapter 5 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="3_5n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="4_Ch1" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#3_Ch5" class="prev-next-button" onclick="openPage(event, '3_Ch5', '3_5y', '3_5n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#4_Ch2" class="prev-next-button" onclick="openPage(event, '4_Ch2', '4_2y', '4_2n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="4_1y">
+            <h1>⚜ Elliana - Chapter 1 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="4_1n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="4_Ch2" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#4_Ch1" class="prev-next-button" onclick="openPage(event, '4_Ch1', '4_1y', '4_1n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#4_Ch3" class="prev-next-button" onclick="openPage(event, '4_Ch3', '4_3y', '4_3n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="4_2y">
+            <h1>⚜ Elliana - Chapter 2 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="4_2n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="4_Ch3" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#4_Ch2" class="prev-next-button" onclick="openPage(event, '4_Ch2', '4_2y', '4_2n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#4_Ch4" class="prev-next-button" onclick="openPage(event, '4_Ch4', '4_4y', '4_4n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="4_3y">
+            <h1>⚜ Elliana - Chapter 3 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="4_3n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="4_Ch4" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#4_Ch3" class="prev-next-button" onclick="openPage(event, '4_Ch3', '4_3y', '4_3n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#4_Ch5" class="prev-next-button" onclick="openPage(event, '4_Ch5', '4_5y', '4_5n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="4_4y">
+            <h1>⚜ Elliana - Chapter 4 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="4_4n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="4_Ch5" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#4_Ch4" class="prev-next-button" onclick="openPage(event, '4_Ch4', '4_4y', '4_4n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#5_Ch1" class="prev-next-button" onclick="openPage(event, '5_Ch1', '5_1y', '5_1n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="4_5y">
+            <h1>⚜ Elliana - Chapter 5 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="4_5n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="5_Ch1" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#4_Ch5" class="prev-next-button" onclick="openPage(event, '4_Ch5', '4_5y', '4_5n')">&#8249;</a>
+          <a href="#TOC" class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#5_Ch2" class="prev-next-button" onclick="openPage(event, '5_Ch2', '5_2y', '5_2n')">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="5_1y">
+            <h1>⚜ Erica - Chapter 1 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="5_1n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="5_Ch2" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#5_Ch1"class="prev-next-button" onclick="openPage(event, '5_Ch1', '5_1y', '5_1n')">&#8249;</a>
+          <a href="#TOC"class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#5_Ch3"class="prev-next-button" onclick="openPage(event, '5_Ch3', '5_3y', '5_3n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="5_2y">
+            <h1>⚜ Erica - Chapter 2 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="5_2n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="5_Ch3" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#5_Ch2"class="prev-next-button" onclick="openPage(event, '5_Ch2', '5_2y', '5_2n')">&#8249;</a>
+          <a href="#TOC"class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a href="#5_Ch4"class="prev-next-button" onclick="openPage(event, '5_Ch4', '5_4y', '5_4n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="5_3y">
+            <h1>⚜ Erica - Chapter 3 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="5_3n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="5_Ch4" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#5_Ch3"class="prev-next-button" onclick="openPage(event, '5_Ch3', '5_3y', '5_3n')">&#8249;</a>
+          <a href="#TOC"class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</button>
+          <a href="#5_Ch5"class="prev-next-button" onclick="openPage(event, '5_Ch5', '5_5y', '5_5n')">&#8250;</a>
+          </div>
+        <div class="honorifics yes">
+          <div id="5_4y">
+            <h1>⚜ Erica - Chapter 4 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="5_4n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div id="5_Ch5" class="tabcontent">
+        <div class="prevNextDiv">
+          <a href="#5_Ch4"class="prev-next-button" onclick="openPage(event, '5_Ch4', '5_4y', '5_4n')">&#8249;</a>
+          <a href="#TOC"class="prev-next-button" onclick="openPage(event, 'TOC', 'y', 'n')">&#9776;</a>
+          <a class="prev-next-button hidden">&#8250;</a>
+        </div>
+        <div class="honorifics yes">
+          <div id="5_5y">
+            <h1>⚜ Erica - Chapter 5 ⚜</h1>
+            <pre>Chapter TBP</pre>
+          </div>
+        </div>
+        <div class="honorifics no">
+          <div id="5_5n">What are you doing in the HTML?!</div>
+        </div>
+        <div class="prevNextDiv"></div>
+      </div>
+
+      <div class="authorNotesAll">
+        <hr class="normal-hr">
+        <p>TBC ...
+          <br><br>
+          Last Chapter: 5
+          <br>
+          Next Update: See <a href="https://jade-moons-novels.meiyufengyue.repl.co/About.html">Schedule</a>
+          <br><br>
+          This novel is a work of fiction. Names, characters, places, and incidents are the product of the author’s imagination or are used in a fictional manner. Any similarities to actual events, places, or people — living or dead — is coincidental.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Get the sticky navbar
+    var stick = document.getElementById("stickyNav");
+
+    // Get the offset position of the sticky navbar
+    var sticky = stick.offsetTop;
+    
+    window.onscroll = function () {
+      scrollFunction(); // When the user scrolls down 20px from the top of the document, show the button
+      stickyDiv();
+      progressBarFunction();
+    };
+
+    window.onclick = function () {
+      openSearchOptionsID();
+    };
+  </script>
+
+
+</body>
+
+</html>
+
